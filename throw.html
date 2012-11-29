@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Throw dice</title>
+		<script src="throw1.js"></script>
+		<style>
+			.button {
+				height: 30px;
+			}
+			.stage {
+				color: #0f0;
+			}
+			.out {
+				color: #f00;
+			}
+			.font {
+				font-size: 12px;
+			}
+		</style>
+	</head>
+	<body onload="init();">
+		<canvas id="canvas" width="300" height="200">
+			Not supported.
+		</canvas>
+		<br />
+		<section>
+			<button class="button" onclick="t();">
+				Throw dice
+			</button>
+			<button class="button" onclick="q();">
+				Exit
+			</button>
+		</section>
+		<form name="f">
+			<table>
+				<tr>
+					<td>Stage:</td>
+					<td>
+					<input name="stage" value="First Throw" class="stage" readonly="true"/>
+					</td>
+				</tr>
+				<tr>
+					<td>Point:</td>
+					<td>
+					<input name="pv" value="    " readonly="true"/>
+					</td>
+				</tr>
+				<tr>
+					<td>Result:</td>
+					<td>
+					<input name="outcome" value="    " class="out" readonly="true"/>
+					</td>
+				</tr>
+			</table>
+		</form>
+		<hr />
+		<em>游戏规则</em>
+		<br />
+		<p class="font">
+			如果第一次的数字之和是7或11，就获胜。如果是2，3或12，就失败了。如果是其他点数，则记录下来，然后继续扔。
+			一旦出现7就失败，直到连续两次出现的点数相同获胜。
+		</p>
+	</body>
+</html>

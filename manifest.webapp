@@ -1,0 +1,14 @@
+{
+  "name": "WEI THROW",
+  "description": "my hello world app on mozilla os",
+  "launch_path": "/throw.html",
+  "icons": {
+    "128": "/icon.png"
+  },
+  "developer": {
+    "name": "Davelet",
+    "url": "http://your-homepage-here.org"
+  },
+  "default_locale": "zh-CN"
+}
+
